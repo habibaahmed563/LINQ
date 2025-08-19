@@ -59,6 +59,52 @@ namespace LINQ
             //} 
             #endregion
 
+            #region transformation Operators - Select / SelectMany
+            //transformation Operators - Select / SelectMany
+
+            //fluent syntax
+            //var result = ProductList.Select(P => P);
+            //var result = ProductList.Select(P => P.ProductName);
+
+
+            //var result = from P in ProductList
+            //             select P.ProductName;
+
+            //var result = ProductList.Where(P => P.UnitsInStock > 0 && P.Category == "Seafood")
+            //            .Select(P=> new 
+            //            { P.ProductName,
+            //              P.Category,
+            //              oldPrice =P.UnitPrice,
+            //              newprice =P.UnitPrice*0.1M
+            //            });
+
+            //var result = from P in ProductList
+            //             where P.UnitsInStock > 0 && P.Category == "Seafood"
+            //             select new
+            //             {
+            //                 P.ProductName,
+            //                 P.Category,
+            //                 oldPrice = P.UnitPrice,
+            //                 newprice = P.UnitPrice * 0.1M
+            //             };
+
+            // var result = CustomerList.Select(c => c.CustomerName);
+            //var result = CustomerList.SelectMany(c => c.Orders);
+
+            //var result = from c in CustomerList
+            //             from O in c.Orders
+            //             select c.Orders;
+
+            //Indexed select valid only in fluent syntax
+            //can't be written using query syntax
+            //var result = ProductList.Select((P, I) => new { I, P.ProductName }).Where(P => P.I < 5);
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
 
 
         }
