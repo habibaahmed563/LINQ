@@ -188,6 +188,61 @@ namespace LINQ
             //} 
             #endregion
 
+            #region elements Operators - Imediate Execution
+            // elements Operators - Imediate Execution 
+
+            //ProductList = new List<Product>();
+
+            //var result = ProductList.First(); //may throw Exeption [sequance containe no elemwnts]
+            //var result = ProductList.Last(); //may throw Exeption [sequance containe no elemwnts]
+
+            //var result = ProductList.First(P=>P.UnitsInStock==1000);//may throw Exeption [sequance containe no elemwnts]
+            //var result = ProductList.Last(P=>P.UnitsInStock==0);//may throw Exeption [sequance containe no elemwnts]
+
+            //var result = ProductList.FirstOrDefault();
+            //var result = ProductList.FirstOrDefault(new Product() { ProductName="Default Product"});
+            //var result = ProductList.FirstOrDefault(P => P.UnitsInStock == 0);
+
+            //var result = ProductList.LastOrDefault();
+            //var result = ProductList.LastOrDefault(new Product() { ProductName = "Default Product" });
+            //var result = ProductList.LastOrDefault(P => P.UnitsInStock == 0);
+
+            //var result = ProductList.ElementAt(1); //May throw Execption
+            //var result = ProductList.ElementAtOrDefault(1); 
+
+            //var result = ProductList.Single();//May throw Execption
+            //sequance Contains more than one element
+            //sequance Contains no element
+
+            //var result = ProductList.Single(P=>P.UnitsInStock==0);//May throw Execption
+            //sequance Contains more than one element
+            //sequance Contains no element
+
+            //var result = ProductList.SingleOrDefault();//May throw Execption
+            //sequance Contains more than one element
+            //return Default value [null] if the sequance is Empty
+
+            //var result = ProductList.SingleOrDefault(new Product() { ProductName = "Default Product" });//May throw Execption
+            //sequance Contains more than one element
+            //return Default value [null] if the sequance is Empty
+
+
+            //var result = ProductList.SingleOrDefault(P=>P.UnitsInStock==1000);//May throw Execption
+            //var result = ProductList.SingleOrDefault(P=>P.ProductID==1);//May throw Execption
+            //sequance Contains more than one element
+            //sequance Contains no element
+
+            //var result = ProductList.DefaultIfEmpty();
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            // Console.WriteLine(result?.ProductName?? "Null"); 
+            #endregion
+
+
 
 
         }
