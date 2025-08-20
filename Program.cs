@@ -242,6 +242,58 @@ namespace LINQ
             // Console.WriteLine(result?.ProductName?? "Null"); 
             #endregion
 
+            #region ggregate Operators - Imediate Exectuion
+            //aggregate Operators - Imediate Exectuion
+
+            //count - sum - Max - Min - Avg
+
+            // var result = ProductList.Count(); //77
+            //var result = ProductList.Count; //77
+
+            //var result =ProductList.Count(P => P.UnitsInStock == 0); //5
+
+            //var result = ProductList.Where(P => P.UnitsInStock == 0).Count();//5
+
+            //sum
+
+            //var result = ProductList.Sum(P => P.UnitPrice);
+            //var result = ProductList.Sum(P => P.UnitsInStock);
+
+            //Avg
+
+            //var result = ProductList.Average(P => P.UnitPrice);
+
+
+            //Max
+
+
+            //var result = ProductList.Max();
+            //var result = ProductList.Max(new ProductComparerUnitInStock());
+            //var result = ProductList.Max(P=>P.UnitPrice);
+            //var result = ProductList.Max(P=>P.UnitsInStock);
+
+            //var Maxprice = ProductList.Max(P=>P.UnitPrice);
+
+            //var result = ProductList.Where(P => P.UnitPrice == Maxprice);
+
+            //var result = ProductList.MaxBy(P => P.UnitPrice);
+
+
+            //var result = ProductList.Min();
+            //var result = ProductList.Min(new ProductComparerNamelength());
+            //var result = ProductList.Max(new ProductComparerNamelength());
+            //var result = ProductList.Min(P=>P.UnitPrice);
+            //var result = ProductList.MinBy(P => P.ProductName);
+
+
+            // Aggregate 
+
+            //List<string> Names = new List<string>() { "Ahmed", "Ali", "Omar", "osama" };
+
+            //var result = Names.Aggregate ((S01, S02) => $"{S01} {S02}");
+
+            //Console.WriteLine(result); 
+            #endregion
 
 
 
