@@ -105,6 +105,89 @@ namespace LINQ
             //} 
             #endregion
 
+            #region ordering operators 
+            // ordering operators 
+
+            //Sorting 
+
+            //var result = ProductList.OrderBy(P => P.UnitPrice);
+            //var result = ProductList.OrderBy(P => P.UnitPrice).Select(P => new { P.ProductName, P.UnitPrice, P.UnitsInStock });
+            //var result = ProductList.OrderBy(P => P.UnitsInStock)
+            //    .Select(P => new
+            //    {   P.ProductName,
+            //        P.UnitPrice,
+            //        P.UnitsInStock 
+            //    });
+
+            //var result = ProductList.OrderByDescending(P => P.UnitsInStock)
+            //    .Select(P => new
+            //    {
+            //        P.ProductName,
+            //        P.UnitPrice,
+            //        P.UnitsInStock
+            //    });
+
+
+            //var result = ProductList.OrderByDescending(P => P.UnitPrice)
+            //    .Select(P => new
+            //    {
+            //        P.ProductName,
+            //        P.UnitPrice,
+            //        P.UnitsInStock
+            //    });
+
+            //var result = ProductList.OrderByDescending(P => P.UnitsInStock)
+            //            .Select(P => new
+            //            {
+            //                P.ProductName,
+            //                P.UnitPrice,
+            //                P.UnitsInStock
+            //            });
+
+
+            //var result = ProductList.OrderByDescending(P => P.UnitsInStock)
+            //            .ThenBy(P=>P.UnitPrice)
+            //            .Select(P => new
+            //            {
+            //                P.ProductName,
+            //                P.UnitPrice,
+            //                P.UnitsInStock
+            //            });
+
+
+            //var result = ProductList.OrderByDescending(P => P.UnitsInStock)
+            //            .ThenByDescending(P => P.UnitPrice)
+            //            .Select(P => new
+            //            {
+            //                P.ProductName,
+            //                P.UnitPrice,
+            //                P.UnitsInStock
+            //            });
+
+            //var result = from P in ProductList
+            //             where P.Category=="Meat/Poultry"&& P.UnitsInStock >0
+            //             orderby P.UnitPrice, P.UnitsInStock descending
+            //             select new
+            //             {
+            //                 P.ProductName,
+            //                 P.UnitPrice,
+            //                 P.UnitsInStock
+            //             };
+
+            //var result = ProductList.Reverse<Product>();
+
+
+            // foreach (var item in result )
+            // {
+            //     Console.WriteLine(item);
+            // }
+
+            //foreach (var item in ProductList)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
 
 
         }
