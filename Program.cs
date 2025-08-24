@@ -324,14 +324,37 @@ namespace LINQ
             //result.Add(new Product() { ProductName = "Product01" });
             //result.Add(new Product() { ProductName = "Product02" });
 
-            var result = Enumerable.Repeat(ProductList[0], 3);
-            var result = Enumerable.Repeat(1, 30);
+            //var result = Enumerable.Repeat(ProductList[0], 3);
+            //var result = Enumerable.Repeat(1, 30);
 
-            foreach (var item in result)
-            {
-                Console.WriteLine(item);
-            } 
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
             #endregion
+
+            #region 8.Set Operators - Union Family 
+            //8.Set Operators - Union Family 
+            //Union - Union All - Intersect - except 
+
+            //var Seq01 = Enumerable.Range(1, 100);
+            //var Seq02 = Enumerable.Range(50, 100);
+
+            //var result = Seq01.Union(Seq02); // Like Union insql Without Duplication
+            //var result = Seq01.Concat(Seq02); // Like Union insql With Duplication
+
+            //result = result.Distinct();
+
+            //var result = Seq01.Intersect(Seq02);
+            //var result = Seq01.Except(Seq02);
+
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine($"{item}");
+            //} 
+            #endregion
+
 
 
         }
