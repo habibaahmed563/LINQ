@@ -11,7 +11,7 @@ namespace LINQ
             //LINQ : 40+ Extension Methods 
             //LINQ : 13 Category
 
-            #region filteration Operator - Where / oftype
+            #region 1.filteration Operator - Where / oftype
             // 1.filteration Operator - Where / oftype
 
             // All Product out stock
@@ -59,7 +59,7 @@ namespace LINQ
             //} 
             #endregion
 
-            #region transformation Operators - Select / SelectMany
+            #region 2.transformation Operators - Select / SelectMany
             //transformation Operators - Select / SelectMany
 
             //fluent syntax
@@ -105,7 +105,7 @@ namespace LINQ
             //} 
             #endregion
 
-            #region ordering operators 
+            #region 3.ordering operators 
             // ordering operators 
 
             //Sorting 
@@ -188,7 +188,7 @@ namespace LINQ
             //} 
             #endregion
 
-            #region elements Operators - Imediate Execution
+            #region 4.elements Operators - Imediate Execution
             // elements Operators - Imediate Execution 
 
             //ProductList = new List<Product>();
@@ -242,7 +242,7 @@ namespace LINQ
             // Console.WriteLine(result?.ProductName?? "Null"); 
             #endregion
 
-            #region ggregate Operators - Imediate Exectuion
+            #region 5.aggregate Operators - Imediate Exectuion
             //aggregate Operators - Imediate Exectuion
 
             //count - sum - Max - Min - Avg
@@ -293,6 +293,22 @@ namespace LINQ
             //var result = Names.Aggregate ((S01, S02) => $"{S01} {S02}");
 
             //Console.WriteLine(result); 
+            #endregion
+
+            #region 6. Casting operators - immediate Executution
+            //6. Casting operators - immediate Executution
+
+            //List<Product> list = (List<Product>) ProductList.Where(P => P.UnitsInStock == 0); //Invalid
+            //List<Product> list = ProductList.Where(P => P.UnitsInStock == 0).ToList(); 
+            //List<Product> list = ProductList.Where(P => P.UnitsInStock == 0).ToArray(); 
+            //Dictionary<long,Product> list = ProductList.Where(P => P.UnitsInStock == 0).ToDictionary(p=>p.ProductID); //Invalid
+            //HashSet< Product> list = ProductList.Where(P => P.UnitsInStock == 0).ToHashSet(); //Invalid
+
+
+            //foreach (var item in list)
+            //{
+            //    Console.WriteLine(item);
+            //} 
             #endregion
 
 
