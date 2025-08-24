@@ -300,7 +300,7 @@ namespace LINQ
 
             //List<Product> list = (List<Product>) ProductList.Where(P => P.UnitsInStock == 0); //Invalid
             //List<Product> list = ProductList.Where(P => P.UnitsInStock == 0).ToList(); 
-            //List<Product> list = ProductList.Where(P => P.UnitsInStock == 0).ToArray(); 
+            //Product[] list = ProductList.Where(P => P.UnitsInStock == 0).ToArray(); 
             //Dictionary<long,Product> list = ProductList.Where(P => P.UnitsInStock == 0).ToDictionary(p=>p.ProductID); //Invalid
             //HashSet< Product> list = ProductList.Where(P => P.UnitsInStock == 0).ToHashSet(); //Invalid
 
@@ -311,6 +311,27 @@ namespace LINQ
             //} 
             #endregion
 
+            #region 7.Generation Operators 
+            //7.Generation Operators 
+            // The only Way To call this Methods as -> class Member Methods Throught "Enumerable" Class
+
+            //Range , Empty , Repeat
+
+            //var result = Enumerable.Range(1, 100);
+
+            //var result = Enumerable.Empty<Product>().ToList();
+
+            //result.Add(new Product() { ProductName = "Product01" });
+            //result.Add(new Product() { ProductName = "Product02" });
+
+            var result = Enumerable.Repeat(ProductList[0], 3);
+            var result = Enumerable.Repeat(1, 30);
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(item);
+            } 
+            #endregion
 
 
         }
