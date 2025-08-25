@@ -406,6 +406,51 @@ namespace LINQ
             //} 
             #endregion
 
+            #region Grouping Operators
+            //Grouping Operators 
+
+            //var result =  ProductList.GroupBy(P => P.Category);
+
+            //result = from P in ProductList
+            //         group P by P.Category;
+
+            //foreach(var Category in result)
+            //{
+            //    Console.WriteLine(Category.Key);
+            //    foreach(var Product in Category)
+            //    {
+            //        Console.WriteLine($" ...... {Product}");
+            //    }
+            //}
+
+            //var result = from P in ProductList
+            //             where P.UnitsInStock > 0
+            //             group P by P.Category
+            //             into Category
+            //             where Category.Count() > 10
+            //             select new { CategoryName = Category.Key ,CountofCategory = Category.Count()};
+
+            //var result = ProductList.Where(P => P.UnitsInStock > 0)
+            //                        .GroupBy(P => P.Category)
+            //                        .OrderByDescending(C=>C.Count())
+            //                        .Where(C => C.Count() > 5)
+            //                        .Select(C => new { CategoryName = C.Key, CountofCategory = C.Count() });
+
+            //foreach (var item in result )
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //foreach (var Category in result)
+            //{
+            //    Console.WriteLine(Category.Key);
+            //    foreach (var Product in Category)
+            //    {
+            //        Console.WriteLine($" ...... {Product}");
+            //    }
+            //} 
+            #endregion
+
 
         }
     }
