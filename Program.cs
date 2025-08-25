@@ -389,6 +389,22 @@ namespace LINQ
             //Console.WriteLine(result); 
             #endregion
 
+            #region 10.Ziping Operators 
+
+            //10.Ziping Operators 
+            //Zip 
+
+            //List<string> Words = new List<string> { "Ten", "Twenty", "Thirty", "Fourty" };
+
+            //List<int> Numbers = new List<int> { 10, 20, 30, 40, 50, 60 };
+
+            //var result = Words.Zip(Numbers, (W, N) => $"{N} --> {W}");
+
+            //foreach(var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
 
 
         }
