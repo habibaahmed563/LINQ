@@ -355,6 +355,40 @@ namespace LINQ
             //} 
             #endregion
 
+            #region 9.Quantifier Operators - Return Boolean 
+            //9.Quantifier Operators - Return Boolean 
+
+            //Any - All - SequenceEqual - Contains 
+
+            //var Seq01 = Enumerable.Range(1, 100);
+            //var Seq02 = Enumerable.Range(50, 100);
+
+            //any () --> Return rue if there are at least one Element [in Sequence Or Match The Condition]
+
+            //var result = Seq01.Any(N=>N%2==0);
+
+            //ProductList = new List<Product>();
+
+            //var result = ProductList.Any();
+
+            //var result = ProductList.Any(P=>P.UnitsInStock==0);
+
+            //All() --> Return True if All in the Sequence Match the Condition or Sequence is Empty 
+
+            //var result = ProductList.All(P => P.UnitsInStock == 0);
+            //var result = ProductList.All(P => P.UnitsInStock > 0);
+
+            //SequenceEqual()
+
+            //var result = Seq01.SequenceEqual(Seq02);
+
+            //var result = Seq02.Contains(1);
+
+            //ProductList.Contains();
+
+            //Console.WriteLine(result); 
+            #endregion
+
 
 
         }
