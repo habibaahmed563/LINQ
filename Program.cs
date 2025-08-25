@@ -451,6 +451,30 @@ namespace LINQ
             //} 
             #endregion
 
+            #region Partioning Operators - Take , TakeLast , Skip , SkipLast , Takewhile , Skipwhile 
+            //Partioning Operators - Take , TakeLast , Skip , SkipLast , Takewhile , Skipwhile 
+
+            //var result = ProductList.Where(P => P.UnitsInStock==0).Take(3);
+            //var result = ProductList.TakeLast(3);
+
+            //var result = ProductList.Skip(10);      
+            //var result = ProductList.SkipLast(10);
+
+            //int[] Numbers = { 9, 6, 4, 1, 2, 3, 4, 5 };
+            //var result = Numbers.TakeWhile ((N) => N % 3 == 0);
+            //var result = Numbers.SkipWhile ((N) => N % 3 == 0);
+
+            //int[] Numbers = { 5, 4, 1, 3, 9, 6, 7, 2, 0 };
+            //var result = Numbers.TakeWhile((N, I) => N > I);
+            //var result = Numbers.SkipWhile((N, I) => N > I);
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+
 
         }
     }
